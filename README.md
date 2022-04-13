@@ -6,13 +6,12 @@ Scrape data from [IMDb’s Top 1,000 movies](https://www.imdb.com/search/title/?
 
 There are 50 movies on each page.
 
-
-# Features
+## Features
 
 In order to get all the necessary information about each movie, the crawler
 GET information from each page and go to the next page until all the data is obtained.
 
-# Final Data
+## Final Data
 
 ### Sample Data
 Extract the following fields for each movie.
@@ -27,10 +26,18 @@ Extract the following fields for each movie.
 
 Always consider that maybe all the information is not available to scrape. Code should not stop or break for these cases if data is missing.
 
-# How to use
+## How to use
 
+### Requirements
 
-## setup
+The script uses the following packages:
+
+* jupyterlab
+* pandas
+* beautifulsoup4
+* requests
+
+### setup
 
 install the required packages:
 
@@ -47,12 +54,11 @@ To install the required packages:
 pip3 install -r requirements.txt
 ```
 
+## Running the script
 
-# Requirements
+You can either use the jupyter notebook or script to get your data. To run the script,
+ activate your `virtualenv` and run the following command:
 
-The script uses the following packages:
-* jupyterlab
-* pandas
-* numpy
-* beautifulsoup4
-* requests
+```python
+python imdb_scraper.py
+```
